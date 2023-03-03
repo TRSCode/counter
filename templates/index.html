@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>My awesome visits Counter</h1>
+        <p>page accessed {{session["visit"]}} times</p>
+    </div>
+    <div class="container btn_box">
+        <a href="/"><button >Click</button></a>
+        <a href="/destroy_session"><button class="reset">Reset</button></a>
+    </div>
+    <div class="container btn_box">
+        <a href="/plus_two"><button class="plus_plus">Plus 2 Visits</button></a> 
+        <!-- above is old mark up, may need below example -->
+        <!-- <form>
+            <button formaction="http://stackoverflow.com">Go to Stack Overflow!</button>
+        </form> -->
+    </div>
+</body>
+</html>
