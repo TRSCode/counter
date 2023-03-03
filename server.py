@@ -31,7 +31,7 @@ def plus_two():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return "Sorry! No response. Try again."
+    return "Sorry! No response. Try again. "
 
 if __name__=="__main__":
     app.run(debug=True) 
